@@ -5,12 +5,48 @@ let infoIcon = document.querySelector(".closeDetails");
 let logo = document.querySelector(".closeDet2");
 let infoClass = document.querySelector(".info");
 let homeClass = document.querySelector("div#home");
+
+let searchClass = document.querySelector("div#search");
+let categoryClass = document.querySelector("div#category");
+let areaClass = document.querySelector("div#area");
+let ingredientsClass = document.querySelector("div#ingredients");
+
+let contactClass = document.querySelector("div#contact");
+let categoryInfoClass = document.querySelector(".category-info");
+let areaInfoClass = document.querySelector(".area-info");
+let ingredientsInfoClass = document.querySelector(".ingredients-info");
+let contact = document.querySelector(".contact#contact");
 infoIcon.addEventListener("click", function () {
-  infoClass.classList.replace("d-block", "d-none");
   homeClass.classList.replace("d-none", "d-block");
+
+  categoryClass.classList.replace("d-block", "d-none");
+  searchClass.classList.replace("d-block", "d-none");
+  areaClass.classList.replace("d-block", "d-none");
+  contactClass.classList.replace("d-block", "d-none");
+  ingredientsInfoClass.classList.replace("d-block", "d-none");
+  infoClass.classList.replace("d-block", "d-none");
+  categoryInfoClass.classList.replace("d-block", "d-none");
+  areaInfoClass.classList.replace("d-block", "d-none");
+  ingredientsInfoClass.classList.replace("d-block", "d-none");
+  ingredientsClass.classList.replace("d-block", "d-none");
+  searchClass.classList.replace("d-block", "d-none");
+  contact.classList.replace("d-block", "d-none");
 });
 logo.addEventListener("click", function () {
   homeClass.classList.replace("d-none", "d-block");
+
+  categoryClass.classList.replace("d-block", "d-none");
+  searchClass.classList.replace("d-block", "d-none");
+  areaClass.classList.replace("d-block", "d-none");
+  contactClass.classList.replace("d-block", "d-none");
+  ingredientsInfoClass.classList.replace("d-block", "d-none");
+  infoClass.classList.replace("d-block", "d-none");
+  categoryInfoClass.classList.replace("d-block", "d-none");
+  areaInfoClass.classList.replace("d-block", "d-none");
+  ingredientsInfoClass.classList.replace("d-block", "d-none");
+  ingredientsClass.classList.replace("d-block", "d-none");
+  searchClass.classList.replace("d-block", "d-none");
+  contact.classList.replace("d-block", "d-none");
 });
 
 // start nav

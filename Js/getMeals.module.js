@@ -115,6 +115,11 @@ export class Home {
             let valeChar = document.querySelector("#searchByLetter");
 
             let search = new Search();
+            // if (valeChar.value == null) {
+            //   search.getDataSearchChar("s")
+            //   console.log("ahmed");
+              
+            // }
             valeName.addEventListener("keyup", (e) => {
               search.getDataSearchName(e.target.value);
             });

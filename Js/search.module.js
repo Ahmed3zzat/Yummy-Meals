@@ -4,8 +4,8 @@ import { Ui } from "./ui.module.js";
 export class Search {
   constructor() {
     this.valeName = document.querySelector("#searchByName");
-    this.infoClass = document.querySelector(".info");
     this.searchClass = document.querySelector(".search#search");
+    this.infoClass = document.querySelector(".info");
   }
   async getDataSearchName(term) {
     let load = document.querySelector(".loading");
@@ -53,7 +53,7 @@ export class Search {
     if (data.meals) {
         ui.searchUi(data.meals);
     } else {
-        ui.searchUi([]);
+        ui.searchUi(data.meals);
     }
 
     let BoxSearch = document.querySelectorAll(".search .row:last-child .box");
