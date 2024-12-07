@@ -1,0 +1,216 @@
+body {
+    background-color: black;
+    --main-transition: 0.6s;
+    /* overflow: hidden; */
+}
+/* Start nav */
+.navbar {
+    left: 0;
+    z-index: 10;
+}
+.navbar .inner {
+    width: fit-content;
+}
+.inner ul li p {
+    font-size: 1.3rem !important;
+    cursor: pointer;
+}
+.inner .social i {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.inner .links .copyRight p {
+    font-size: 1.3rem;
+}
+.navbar .outer {
+    width: fit-content;
+}
+.navbar .outer .image img {
+    width: 40%;
+}
+.navbar .outer .image img {
+    width: 50px;
+}
+.navbar .outer .menu i {
+    font-size: 2.3rem;
+    cursor: pointer;
+}
+.navbar .outer .menu i.closeLogo {
+    display: none;
+}
+.navbar .share i {
+    font-size: 2.3rem;
+}
+.inner .top-to ul li {
+    transition: var(--main-transition);
+    transform: translateY(400px);
+}
+.inner .top-to ul li p {
+    transition: var(--main-transition);
+}
+.inner .top-to ul li p:hover {
+    color: rgb(168, 168, 2);
+}
+/* End nav */
+
+/* start home */
+.home .overlay {
+    top: 150%;
+    transition: var(--main-transition);
+}
+.home .box:hover .overlay {
+    top: 0;
+}
+.home .overlay p {
+    font-size: 1.5rem;
+}
+
+.category-info .overlay,
+.search .overlay,
+.area-info .overlay,
+.ingredients-info .overlay {
+    top: 150%;
+    transition: var(--main-transition);
+}
+.category-info .box:hover .overlay,
+.ingredients-info .box:hover .overlay,
+.search .box:hover .overlay,
+.area-info .box:hover .overlay {
+    top: 0;
+}
+.category-info .overlay p,
+.search .overlay p,
+.ingredients-info .overlay p,
+.area-info .overlay p {
+    font-size: 1.5rem;
+}
+/* end home */
+.info i {
+    cursor: pointer;
+}
+.closeDet2 img {cursor: pointer;}
+/* start seach */
+.search .inputSearch input {
+    outline: none;
+}
+/* end seach */
+
+/* start category */
+
+.category .cart .overlay {
+    top: 110%;
+    transition: var(--main-transition);
+}
+.category .cart:hover .overlay {
+    top: 0%;
+}
+
+/* end category */
+
+/* start area */
+.area .cart {
+    cursor: pointer;
+}
+/* send area */
+
+/* start ingredients */
+.ingredients .cart {
+    cursor: pointer;
+}
+/* end ingredients */
+
+/* start loading */
+.loading {
+    z-index: 100;
+}
+.sk-chase {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: sk-chase-dot 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:before {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 25%;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: sk-chase-dot-before 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:nth-child(1) {
+    animation-delay: -1.1s;
+}
+.sk-chase-dot:nth-child(2) {
+    animation-delay: -1s;
+}
+.sk-chase-dot:nth-child(3) {
+    animation-delay: -0.9s;
+}
+.sk-chase-dot:nth-child(4) {
+    animation-delay: -0.8s;
+}
+.sk-chase-dot:nth-child(5) {
+    animation-delay: -0.7s;
+}
+.sk-chase-dot:nth-child(6) {
+    animation-delay: -0.6s;
+}
+.sk-chase-dot:nth-child(1):before {
+    animation-delay: -1.1s;
+}
+.sk-chase-dot:nth-child(2):before {
+    animation-delay: -1s;
+}
+.sk-chase-dot:nth-child(3):before {
+    animation-delay: -0.9s;
+}
+.sk-chase-dot:nth-child(4):before {
+    animation-delay: -0.8s;
+}
+.sk-chase-dot:nth-child(5):before {
+    animation-delay: -0.7s;
+}
+.sk-chase-dot:nth-child(6):before {
+    animation-delay: -0.6s;
+}
+
+@keyframes sk-chase {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sk-chase-dot {
+    80%,
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sk-chase-dot-before {
+    50% {
+        transform: scale(0.4);
+    }
+    100%,
+    0% {
+        transform: scale(1);
+    }
+}
+/* end loading */
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
